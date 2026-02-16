@@ -346,6 +346,8 @@ split file.txt into 300 lines per file and output to file1 file2 and file3
 add contry names in a file (10 contry names)
 split -l 2 contries.txt sep  -> hit enter it will create 5 files each containing 2 names. 
 
+cat file1 file2 file3 > combined_file_name -> it combines files into one 
+
 # linux vs windows commands :
 
 # module 5 : System Administration -
