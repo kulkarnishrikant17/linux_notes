@@ -983,6 +983,29 @@ script filename
 
 # module 7 ( Networking , services and system updates):
 
+# network and files (ping, ifup, ifdown, netstat, tcpdump)
+ping - The ping command is used to check the network connectivity between the local machine and a target system (such as a server or another machine on the network).
+ping 8.8.8.8
+
+ifup - The ifup command is used to activate a network interface that is currently down. It reads the configuration from network configuration files (e.g., /etc/network/interfaces or /etc/sysconfig/network-scripts/ifcfg-*).
+sudo ifup eth0
+sudo ifup --force eth0  -> if it is not configured in configuration file
+
+ifdown - The ifdown command is used to deactivate a network interface. It is commonly used to troubleshoot or to make changes to the network configuration of an interface.
+sudo ifdown eth0
+
+netstat - The netstat command is used to display a variety of network information, such as network connections, routing tables, interface statistics, and masquerade connections
+netstat -tuln
+
+tcpdump - Capture and analyze network packets
+
+ethtool - is used in Linux to view and configure network interface hardware settings.
+A production server is slow.
+You suspect a speed mismatch.
+Expected: 1Gbps Full Duplex
+Actual: 100Mb/s Half Duplex
+This causes packet collisions and performance degradation.
+
 # network files and commands (ping, ifup, ifdown, netstat, tcpdump): 
 
 # NIC information (ethtool):
